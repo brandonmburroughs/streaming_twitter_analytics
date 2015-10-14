@@ -1,0 +1,2 @@
+# Prevent the real YAML from being pushed to Github
+config.yaml
