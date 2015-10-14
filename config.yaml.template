@@ -1,0 +1,33 @@
+############### Streaming Twitter Analysis Configuration Example ##############
+
+# This file contians an overview of various configuration settings.
+
+#################################### Kafka ####################################
+
+# Configurations related to Kafka
+
+# The IP address(es) for your Kafka cluster
+# NOTE:  This needs to be updated to handle multiple nodes
+kafka.ip: 192.168.33.10
+
+# The port to connect to the Kafka client.  The default is 9092.  
+kafka.port: 9092
+
+
+################################### Twitter ###################################
+
+# Configurations related to Twitter
+
+# Consumer key for your Twitter application
+# Go to http://apps.twitter.com and create an app.
+# The consumer key and secret will be generated for you.
+consumer.key: <your_key_here>
+consumer.secret: <your_secret_here>
+
+# After the step above, you will be redirected to your app's page.
+# Create an access token under the the "Your access token" section.
+access.token: <access_token>
+access.token.secret: <access_token_secret>
+
+# Twitter stream topics
+topic: ['data science', 'kafka', 'spark']
