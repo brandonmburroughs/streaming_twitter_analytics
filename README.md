@@ -7,7 +7,7 @@ This project is for the purpose of learning more about streaming data systems.  
 Clone this repo.
 
 ```
-git clone <url>
+git clone https://github.com/brandonmburroughs/streaming_twitter_analytics.git
 ```
 
 Install the [kafka-python](https://github.com/mumrah/kafka-python) package.
