@@ -16,7 +16,7 @@ Install the [kafka-python](https://github.com/mumrah/kafka-python) package.
 pip install kafka-python
 ```
 
-Install Spark.  You can find instruction at [District Data Labs](https://districtdatalabs.silvrback.com/getting-started-with-spark-in-python).  You may need to install the `pyspark` python package separately.
+Install Spark.  You can find instructions at [District Data Labs](https://districtdatalabs.silvrback.com/getting-started-with-spark-in-python).  You may need to install the `pyspark` python package separately.
 
 Setup Kafka.  I used a [single node VM](https://github.com/chadlung/vagrant-kafka) with Zookeeper and Kafka installed for the sake of simplicity.  You can read more about how to set that up at the provided repo.
 
