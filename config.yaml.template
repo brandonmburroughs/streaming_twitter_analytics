@@ -17,7 +17,11 @@ kafka.port: 9092
 #################################### Kafka ####################################
 
 # Configurations related to Zookeeper
+
+# The IP address for your Zookeeper node
 zookeeper.host: 192.168.33.10
+
+# The port to connect to the Zookeeper node.  The default is 9092.  
 zookeeper.port: 2181
 
 
