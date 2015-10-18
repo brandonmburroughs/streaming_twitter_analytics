@@ -14,6 +14,13 @@ kafka.ip: 192.168.33.10
 kafka.port: 9092
 
 
+#################################### Kafka ####################################
+
+# Configurations related to Zookeeper
+zookeeper.host: 192.168.33.10
+zookeeper.port: 2181
+
+
 ################################### Twitter ###################################
 
 # Configurations related to Twitter
