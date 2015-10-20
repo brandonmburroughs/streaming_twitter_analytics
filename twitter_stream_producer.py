@@ -141,13 +141,17 @@ class TwitterStream():
 
 if __name__ == '__main__':
     # Connect to Kafka cluster
-    kafka = KafkaClient("%s:%s" % (config['kafka.ip'], config['kafka.port']) )
+    kafka = KafkaClient("%s:%s" % (config['kafka.host'], config['kafka.port']) )
 
     # Create a Kafka listener
     kafka_listener = KafkaOutListener(kafka)
 
+    # Construct the list of twitter topics
+    twitter_topic_list = config['topic']
+    n_twitter_topic_list = len(twitter_topic_list)
+    topic = str(twitter_topic_list[n_twitter_topic_list - 1]) if n_twitter_topic_list == 1 else ' OR '.join(twitter_topic_list)
+    
     # Create a Twitter Stream with Kafka listener
-    topic = 'data science'
     twitter_stream = TwitterStream(topic, kafka_listener)
 
     # Start the twitter stream
