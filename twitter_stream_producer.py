@@ -147,7 +147,7 @@ if __name__ == '__main__':
     kafka_listener = KafkaOutListener(kafka)
 
     # Construct the list of twitter topics
-    twitter_topic_list = config['topic']
+    twitter_topic_list = config['twitter.topic']
     n_twitter_topic_list = len(twitter_topic_list)
     topic = str(twitter_topic_list[n_twitter_topic_list - 1]) if n_twitter_topic_list == 1 else ' OR '.join(twitter_topic_list)
     
